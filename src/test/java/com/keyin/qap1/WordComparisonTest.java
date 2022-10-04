@@ -7,11 +7,17 @@ import org.junit.jupiter.api.Test;
 public class WordComparisonTest {
 
     @Test
+    public void wordComparisonTest(){
+        Assertions.assertTrue(WordComparison.findSequenceInWord("_char_", "is_find_in_this_char_sequence"));
+    }
+
+    @Test
     public void testGetName() {
 
         WordComparison wordComparison = new WordComparison ("Jamie", "Toronto", "Ontario");
 
         Assertions.assertSame("Jamie", wordComparison.getName());
+
 
         System.out.println("Name = " + wordComparison.getName() + ", condition is True.");
 

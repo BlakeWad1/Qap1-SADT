@@ -10,6 +10,11 @@ public class WordComparison {
         this.city = c;
         this.province = p;
     }
+
+    public static boolean findSequenceInWord(String wordToFind, String charSequence) {
+        return charSequence.contains(wordToFind);
+    }
+
     public String getName(){
         return name;
     }
